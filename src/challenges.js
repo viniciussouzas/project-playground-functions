@@ -9,6 +9,7 @@ const compareTrue = (par1, par2) => (par1 && par2 === true) ? true : false
 const splitSentence = string => string.split(' ');
 
 // Desafio 3 - Crie a função concatName
+const concatName = arrayStrings => `${arrayStrings[arrayStrings.length -1]}, ${arrayStrings[0]}`;
 
 // Desafio 4 - Crie a função footballPoints
 
