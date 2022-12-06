@@ -5,8 +5,8 @@ const macaco = false;
 
 const compareTrue = (par1, par2) => (par1 && par2 === true) ? true : false
 
-
 // Desafio 2 - Crie a função splitSentence
+const splitSentence = string => string.split(' ');
 
 // Desafio 3 - Crie a função concatName
 
