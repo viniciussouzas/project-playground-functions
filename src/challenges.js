@@ -64,12 +64,12 @@ const fizzBuzz = arrayFizzBuzz => {
   
   const keepFizzBuzz = [];
 
-  for (let index = 0; index < arrayFizzBuzz.length; index += 1) {
-    if (arrayFizzBuzz[index] % 3 === 0 && arrayFizzBuzz[index] % 5 === 0) {
+  for (let index of arrayFizzBuzz) {
+    if (index % 3 === 0 && index % 5 === 0) {
       keepFizzBuzz.push('fizzBuzz');
-    } else if (arrayFizzBuzz[index] % 5 === 0) {
+    } else if (index % 5 === 0) {
       keepFizzBuzz.push('buzz');
-    } else if (arrayFizzBuzz[index] % 3 === 0) {
+    } else if (index % 3 === 0) {
       keepFizzBuzz.push('fizz');
     } else {
       keepFizzBuzz.push('bug!');
