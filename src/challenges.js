@@ -15,6 +15,20 @@ const concatName = arrayStrings => `${arrayStrings[arrayStrings.length -1]}, ${a
 const footballPoints = (wins, ties) => (wins * 3) + ties;
 
 // Desafio 5 - Crie a função highestCount
+const highestCount = arrayNumbers => {
+  let highestNumber = arrayNumbers[0];
+  let repeat = 1;
+
+  for (let index = 1; index < arrayNumbers.length; index += 1) {
+    if (arrayNumbers[index] > highestNumber) {
+      highestNumber = arrayNumbers[index];
+      repeat = 1;
+    } else if (arrayNumbers[index] === highestNumber) {
+      repeat += 1;
+    }
+  }
+  return repeat 
+}
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
