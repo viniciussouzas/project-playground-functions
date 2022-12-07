@@ -37,11 +37,11 @@ const calcRectangleArea = (base, height) => (base * height);
 
 const calcAllAreas = (base, height, form) => {
   if (form === 'triângulo') {
-    return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}.`;
+    return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
   } else if (form === 'retângulo') {
-    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}.`;
+    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
   } else {
-    return `Não foi possível fazer o cálculo, insira uma forma geométrica válida.`
+    return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`
   }
 };
 
@@ -138,7 +138,7 @@ const techList = (techName, personName) => {
   }
 
   if (techName.length === 0) {
-    return 'O array está vazio!';
+    return [];
   }
 
   return arrayList;
