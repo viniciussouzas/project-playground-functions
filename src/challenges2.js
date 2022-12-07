@@ -35,6 +35,13 @@ const generatePhoneNumber = numbersArray => {
 }
 
 // Desafio 12 -  Crie a função triangleCheck
+const triangleCheck = (lineA, lineB, lineC) => {
+  if (lineA < (lineB + lineC) && lineA > (Math.abs(lineB - lineC)) || lineA < (lineB + lineC) && lineB < (lineA + lineC) && lineC < (lineA + lineB)) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 // Desafio 13 - Crie a função hydrate
 
