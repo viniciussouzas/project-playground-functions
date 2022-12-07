@@ -44,6 +44,17 @@ const triangleCheck = (lineA, lineB, lineC) => {
 };
 
 // Desafio 13 - Crie a função hydrate
+const hydrate = stringDrinks => {
+  let quantityOfDrinks = stringDrinks.match(/\d+/g)
+  let quantityOfWater = 0;
+
+  for (let index of quantityOfDrinks) {
+    quantityOfWater += Number(index);
+  }
+
+  return quantityOfWater === 1 ? `${quantityOfWater} copo de água` : `${quantityOfWater} copos de água`;
+
+};
 
 /* eslint no-undef: 0 */
 
