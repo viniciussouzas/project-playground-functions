@@ -125,6 +125,24 @@ const decode = stringDecode => {
 }
 
 // Desafio 10 - Crie a função techList
+const techList = (techName, personName) => {
+  techName.sort();
+  let arrayList = [];
+
+  for (let index of techName) {
+    let objectArray = {
+      tech: index,
+      name: personName,
+    };
+    arrayList.push(objectArray);
+  }
+
+  if (techName.length === 0) {
+    return 'O array está vazio!';
+  }
+
+  return arrayList;
+}
 
 // Não modifique essas linhas
 module.exports = {
