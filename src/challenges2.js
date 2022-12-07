@@ -30,7 +30,7 @@ const generatePhoneNumber = numbersArray => {
     }
   }
 
-  return `(${areaCode.join('')}) ${sequence1.join('')} - ${sequence2.join('')}`;
+  return `(${areaCode.join('')}) ${sequence1.join('')}-${sequence2.join('')}`;
 
 }
 
